@@ -1,0 +1,33 @@
+// program to understand the concept of multiple inheritance
+#include<iostream>
+using namespace std;
+// first base class
+class Department{
+    public:
+    Department()
+    {
+        cout<<"Department constructor called "<<endl;
+    }
+};
+//second base class
+class Teacher{
+    public:
+    Teacher()
+    {
+        cout<<"Teacher constructor called "<<endl;
+    }
+};
+// sub class derived from two base class
+class student : public Department,public Teacher{
+    public:
+    student()
+    {
+        cout<<"student constructor called "<<endl;
+    }
+};
+//driver code
+int main()
+{
+    student s;
+    return 0;
+}
